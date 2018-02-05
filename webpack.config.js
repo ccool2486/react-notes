@@ -1,7 +1,15 @@
 const path = require('path');
 
+/** app位置 
+ * 如果要暫時換換一下去Playground的話，可以換
+*/
+const entries = {
+  app: './src/app.js',
+  playground: './src/playground/redux-101.js'
+}
+
 module.exports = {
-  entry: './src/app.js',
+  entry: entries.playground,
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
